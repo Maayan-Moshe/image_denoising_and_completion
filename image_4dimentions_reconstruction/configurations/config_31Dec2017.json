@@ -1,0 +1,11 @@
+{"graph_params": 
+	{"image shape": [155, 208], 
+	"cost": "l1_cost", 
+	"data_path": "/sample_data/image_4D_reconstruction/20171224141532/4d_images.npy"},
+"train_params": 
+	{"learning_rate": 0.0001, 
+	"saved_state_fname": "model_3x3_abs", 
+	"state_fname": null, 
+	"state_folder": "/home/deeplearning/Documents/saved_models/trivial_image4D/", 
+	"summaries_dir": "/home/deeplearning/Documents/results/summaries"}
+}
