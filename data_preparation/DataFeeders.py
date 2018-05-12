@@ -10,7 +10,7 @@ class OneFileValidatorFeeder:
         data = np.load(data_path, encoding = 'latin1').tolist()
         self.__set_data(data)
         self.cropping = cropping
-        
+
     def get_all_data(self):
         
         return {'input': self.image[:, :, self.cropping:], 'truth': self.true_z[:, :, self.cropping:]}
@@ -163,3 +163,33 @@ class SeparateFilesFeeder:
         self.fnames = get_all_npy_from_folder(self.folder)
         self.num_files = len(self.fnames)
         self.order = np.random.permutation(range(self.num_files))
+
+class MINSTSingleFileRandomZeros:
+
+    def __init__(self, file_path, batch_size, zero_percentage, **kwargs):
+        from .reading_minst_data import read_idx
+
+        self.true_data = read_idx(file_path)
+        self.order = np.random.permutation(len(self.true_data))
+        self.batch_size = batch_size
+        self.index = 0
+        self.zero_percentage = zero_percentage
+        assert 1 >= self.zero_percentage >= 0, 'percentage should be between 0 and 1'
+
+    def next_batch(self):
+        true_batch = self.__get_true_data()
+        corrupted_batch = self.__get_corrupted_data(true_batch)
+        return {'input': corrupted_batch, 'truth': true_batch}
+
+    def __get_true_data(self):
+        true_batch = self.true_data[self.order[self.index: self.index + self.batch_size]]
+        self.index += self.batch_size
+        self.index %= len(self.true_data)
+        return true_batch
+
+    def __get_corrupted_data(self, true_batch):
+        corrupted_batch = np.copy(true_batch)
+        sze = corrupted_batch.size
+        zero_indexes = np.random.choice(range(sze), int(self.zero_percentage * sze))
+        corrupted_batch.ravel()[zero_indexes] = 0
+        return corrupted_batch

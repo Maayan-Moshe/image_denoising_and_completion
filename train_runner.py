@@ -33,13 +33,16 @@ PARAMS = {'train_params':{
                 'expansion': {
                         'expander': 'DataExpanderAveragerAdditioner',
                         'regularization': {'kernel': 5e-1, 'bias': 5e-1}}},
-          'data_params':{
-                'folder': r'//fs05/Shared Box/Image4D_database/IO/seperate_file_data',
-                'data_path': r'//fs05/Shared Box/Image4D_database/IO/validation_data/s0_s1_validation.npy',
+          'train_data_params':{
+                'file_path': r"C:\Users\maaya\Documents\minst_data\train-images.idx3-ubyte",
                 'batch_size': 60,
-                'cropping': 0,
-                'feeder': 'SeparateFilesFeeder',
-                'validation_feeder': 'OneFileValidatorFeeder'}
+                'zero_percentage': 0.3,
+                'feeder': 'MINSTSingleFileRandomZeros'},
+          'validation_data_params':{
+                'file_path': r"C:\Users\maaya\Documents\minst_data\train-images.idx3-ubyte",
+                'batch_size': 40,
+                'zero_percentage': 0.3,
+                'feeder': 'MINSTSingleFileRandomZeros'}
           }
 
 class SessionTrainer:
@@ -97,8 +100,8 @@ def prepare_components(params):
     
     graph_module = import_module(params['graph_params']['module_path'])
     graph_p = graph_module.prepare_graph(params['graph_params'])
-    train_feeder = getattr(data_feeders, params['data_params']['feeder'])(**params['data_params'])
-    validation_feeder = getattr(data_feeders, params['data_params']['validation_feeder'])(**params['data_params'])
+    train_feeder = getattr(data_feeders, params['train_data_params']['feeder'])(**params['train_data_params'])
+    validation_feeder = getattr(data_feeders, params['validation_data_params']['feeder'])(**params['validation_data_params'])
     components = {'graph': graph_p, 'train feeder': train_feeder, 
                   'saver': tf.train.Saver(), 'summary merge': tf.summary.merge_all(),
                   'validation feeder': validation_feeder}
