@@ -11,22 +11,20 @@ MAX_LOSS = 1e10
 PARAMS = {'train_params':{
                 'initial_learning_rate': 1e-3,
                 'minimum_learning_rate': 1e-5,
-                'state_fname': 'real_data_multiscale_18_Mar_2018_14_31.ckpt',
-                'state_folder': r'path_to_state_files\saved_models\image_multi_scale',
-                'summaries_dir': r'path_to_state_files\results\summaries_images',
+                'state_fname': None,
+                'state_folder': r'C:\Users\maaya\Documents\deep_learning\saved_models\image_multi_scale',
+                'summaries_dir': r'C:\Users\maaya\Documents\deep_learning\results\summaries_images',
                 'saved_state_fname': 'real_data_multiscale',
                 'num_iterations': 200,
                 'summary_name': 'nn_real_data_multiscale',
                 'validation_rate_step': 5},
           'graph_params':{
                 'module_path': 'gray_image_reconstruction.multiscale_graph_builder',
-                'image_shape': (178, 233),
-                'cost': 'huber_plus_abs_derivative_cost',
-                'cost_params': {'derivative_strength': 0e-1,
-                                'moving_tissue_slope': 0e0},
-                'loss_producer': 'LossTrainingProducerFiniteRangeMovingTissue',
-                'range_size_pix': 15,
-                'max_z_mm': 25, 'min_z_mm': 0,
+                'image_shape': (28, 28),
+                'cost': 'l2_cost',
+                'cost_params': {},
+                'loss_producer': 'LossTrainingProducer',
+                'max_z_mm': 256, 'min_z_mm': 0,
                 'reduction': {
                         'reducer': 'HeightMapReducerFiller',
                         'regularization': {'kernel': 5e-1, 'bias': 5e-1}},
@@ -34,15 +32,15 @@ PARAMS = {'train_params':{
                         'expander': 'DataExpanderAveragerAdditioner',
                         'regularization': {'kernel': 5e-1, 'bias': 5e-1}}},
           'train_data_params':{
-                'file_path': r"C:\Users\maaya\Documents\minst_data\train-images.idx3-ubyte",
+                'file_path': r"C:\Users\maaya\Documents\deep_learning\minst_data\train-images.idx3-ubyte",
                 'batch_size': 60,
                 'zero_percentage': 0.3,
                 'feeder': 'MINSTSingleFileRandomZeros'},
           'validation_data_params':{
-                'file_path': r"C:\Users\maaya\Documents\minst_data\train-images.idx3-ubyte",
-                'batch_size': 40,
+                'file_path': r"C:\Users\maaya\Documents\deep_learning\minst_data\train-images.idx3-ubyte",
+                'sample_size': 80,
                 'zero_percentage': 0.3,
-                'feeder': 'MINSTSingleFileRandomZeros'}
+                'feeder': 'MINSTSingleFileRandomZerosValidate'}
           }
 
 class SessionTrainer:

@@ -2,30 +2,6 @@
 import tensorflow as tf
 from utils.utils import get_normalized_weights, stack_input, reshape_image
 
-
-@staticmethod
-def _weight_heights(reduced_stacked_z, normed_weights):
-    with tf.name_scope('weighting_heights'):
-        weighted_height_map = reduced_stacked_z*normed_weights
-        reduced_image = tf.reduce_sum(weighted_height_map, axis = 3)
-        reduced_image = tf.expand_dims(reduced_image, axis = 3)
-        return reduced_image, weighted_height_map
-
-
-@staticmethod
-def _get_weights(stacked_input):
-    with tf.name_scope('calculating_weights'):
-        first_layer = tf.contrib.layers.conv2d(inputs = stacked_input, stride = 2,
-                                num_outputs = 64, kernel_size = 4, activation_fn = tf.nn.relu,
-                                biases_initializer=tf.initializers.truncated_normal(mean = 2e-1, stddev = 4e-2))
-
-        weights = tf.contrib.layers.conv2d(inputs = first_layer, stride = 1,
-                            num_outputs = 4, kernel_size = 3, activation_fn = tf.nn.relu,
-                            biases_initializer=tf.initializers.truncated_normal(mean = 2e-1, stddev = 4e-2))
-
-        return weights
-
-
 class HeightMapReducerBase:
     
     def __init__(self, num_rows, num_cols):
@@ -40,10 +16,10 @@ class HeightMapReducerBase:
     def _get_reduced_data(self, previous_data):
         
         stacked_input = stack_input(previous_data)
-        weights = _get_weights(stacked_input)
+        weights = get_weights(stacked_input)
         normed_weights = get_normalized_weights(weights)
         reduced_stacked_z = get_padded_reduced_z(previous_data['image'], self.num_rows, self.num_cols)
-        av_image, weighted_height_map = _weight_heights(reduced_stacked_z, normed_weights)
+        av_image, weighted_height_map = weight_heights(reduced_stacked_z, normed_weights)
         return av_image, weights, weighted_height_map, reduced_stacked_z
 
 
@@ -109,6 +85,25 @@ def get_padded_reduced_z(input_z, num_rows, num_cols):
         padded_z = tf.pad(reshape_image(input_z), padding, "SYMMETRIC")
         reduced_stacked_z = tf.space_to_depth(padded_z, 2, name = 'reduced_stacked_z')
         return reduced_stacked_z
+
+def get_weights(stacked_input):
+    with tf.name_scope('calculating_weights'):
+        first_layer = tf.contrib.layers.conv2d(inputs = stacked_input, stride = 2,
+                                num_outputs = 64, kernel_size = 4, activation_fn = tf.nn.relu,
+                                biases_initializer=tf.initializers.truncated_normal(mean = 2e-1, stddev = 4e-2))
+
+        weights = tf.contrib.layers.conv2d(inputs = first_layer, stride = 1,
+                            num_outputs = 4, kernel_size = 3, activation_fn = tf.nn.relu,
+                            biases_initializer=tf.initializers.truncated_normal(mean = 2e-1, stddev = 4e-2))
+
+        return weights
+
+def weight_heights(reduced_stacked_z, normed_weights):
+    with tf.name_scope('weighting_heights'):
+        weighted_height_map = reduced_stacked_z*normed_weights
+        reduced_image = tf.reduce_sum(weighted_height_map, axis = 3)
+        reduced_image = tf.expand_dims(reduced_image, axis = 3)
+        return reduced_image, weighted_height_map
         
 if __name__ == '__main__':
     import sys

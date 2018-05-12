@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0463fdc3-3138-435a-a89d-9446c41d7f33" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/data_preparation/reading_minst_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_preparation/DataFeeders.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preparation/DataFeeders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py" beforeDir="false" afterPath="$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_runner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,26 @@
       <file leaf-file-name="train_runner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="100" column="43" lean-forward="true" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+            <state relative-caret-position="153">
+              <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/validator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="31" column="46" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saver.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="1801" selection-start-line="1801" selection-end-line="1801" />
             </state>
           </provider>
         </entry>
@@ -40,8 +57,8 @@
       <file leaf-file-name="gray_image_reducer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-493">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="30" />
+            <state relative-caret-position="1462">
+              <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -58,8 +75,8 @@
       <file leaf-file-name="DataFeeders.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="168" column="32" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="32" />
+            <state relative-caret-position="265">
+              <caret line="200" column="87" selection-start-line="200" selection-start-column="87" selection-end-line="200" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -68,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/utils/loss_producer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -76,8 +93,8 @@
       <file leaf-file-name="reading_minst_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_preparation/reading_minst_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="116">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="48" />
               <folding>
                 <element signature="e#289#302#0" expanded="true" />
               </folding>
@@ -88,28 +105,8 @@
       <file leaf-file-name="cost_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/cost_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image4d_deserializer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/imag4d/image4d_deserializer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trivial_3x3_graph_builder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image_4dimentions_reconstruction/trivial_3x3_graph_builder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -133,6 +130,8 @@
       <find>aviya</find>
       <find>shlomit</find>
       <find>/media/sf_DeepLearningAlgIsrael/Maayan_Moshe</find>
+      <find>get_weights</find>
+      <find>weight_heights</find>
     </findStrings>
     <replaceStrings>
       <replace>image</replace>
@@ -167,9 +166,9 @@
         <option value="$PROJECT_DIR$/image_4dimentions_reconstruction/nn_graph_builder.py" />
         <option value="$PROJECT_DIR$/image_4dimentions_reconstruction/derivative_only_graph_builder.py" />
         <option value="$PROJECT_DIR$/image_4dimentions_reconstruction/trivial_3x3_variable_reader.py" />
-        <option value="$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py" />
         <option value="$PROJECT_DIR$/utils/loss_producer.py" />
         <option value="$PROJECT_DIR$/data_preparation/reading_minst_data.py" />
+        <option value="$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py" />
         <option value="$PROJECT_DIR$/data_preparation/DataFeeders.py" />
         <option value="$PROJECT_DIR$/train_runner.py" />
       </list>
@@ -208,6 +207,11 @@
               <item name="image_denoising_and_completion" type="462c0819:PsiDirectoryNode" />
               <item name="image_4dimentions_reconstruction" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="image_denoising_and_completion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="image_denoising_and_completion" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -231,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.reading_minst_data">
+  <component name="RunManager" selected="Python.train_runner">
     <configuration name="reading_minst_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="image_denoising_and_completion" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -246,8 +250,8 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preparation/reading_minst_data.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="train_runner" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -274,8 +278,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.reading_minst_data" />
         <item itemvalue="Python.train_runner" />
+        <item itemvalue="Python.reading_minst_data" />
       </list>
     </recent_temporary>
   </component>
@@ -296,14 +300,14 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" weight="0.32968536" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32968536" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32968536" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32968536" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32968536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32968536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -487,6 +491,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/imag4d/image4d_deserializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/data_expander_averager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_preparation/reading_minst_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="48" />
+          <folding>
+            <element signature="e#289#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/loss_producer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/cost_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/image_4dimentions_reconstruction/derivative_only_graph_builder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -499,60 +541,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="1462">
+          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/imag4d/image4d_deserializer.py">
+    <entry file="file://C:/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="154">
+          <caret line="1801" selection-start-line="1801" selection-end-line="1801" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/cost_functions.py">
+    <entry file="file://$PROJECT_DIR$/utils/validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/data_expander_averager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/loss_producer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_preparation/reading_minst_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="12" />
-          <folding>
-            <element signature="e#289#302#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="309">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="168" column="32" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="32" />
+        <state relative-caret-position="265">
+          <caret line="200" column="87" selection-start-line="200" selection-start-column="87" selection-end-line="200" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="100" column="43" lean-forward="true" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+        <state relative-caret-position="153">
+          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
         </state>
       </provider>
     </entry>

@@ -178,7 +178,7 @@ class MINSTSingleFileRandomZeros:
 
     def next_batch(self):
         true_batch = self.__get_true_data()
-        corrupted_batch = self.__get_corrupted_data(true_batch)
+        corrupted_batch = get_corrupted_data(true_batch, self.zero_percentage)
         return {'input': corrupted_batch, 'truth': true_batch}
 
     def __get_true_data(self):
@@ -187,9 +187,29 @@ class MINSTSingleFileRandomZeros:
         self.index %= len(self.true_data)
         return true_batch
 
-    def __get_corrupted_data(self, true_batch):
-        corrupted_batch = np.copy(true_batch)
-        sze = corrupted_batch.size
-        zero_indexes = np.random.choice(range(sze), int(self.zero_percentage * sze))
-        corrupted_batch.ravel()[zero_indexes] = 0
-        return corrupted_batch
+class MINSTSingleFileRandomZerosValidate:
+
+    def __init__(self, file_path, sample_size, zero_percentage, **kwargs):
+        from .reading_minst_data import read_idx
+
+        self.true_data = get_true_data(read_idx(file_path), sample_size)
+        self.corrupted_data = get_corrupted_data(self.true_data, zero_percentage)
+        assert 1 >= zero_percentage >= 0, 'percentage should be between 0 and 1'
+
+    def get_all_data(self):
+
+        return {'input': np.copy(self.corrupted_data), 'truth': np.copy(self.true_data)}
+
+def get_corrupted_data(true_batch, zero_percentage):
+    corrupted_batch = np.copy(true_batch)
+    sze = corrupted_batch.size
+    zero_indexes = np.random.choice(range(sze), int(zero_percentage * sze))
+    corrupted_batch.ravel()[zero_indexes] = 0
+    return corrupted_batch
+
+def get_true_data(all_data, sample_size):
+    order = np.random.permutation(len(all_data))
+    true_sample = all_data[order[0: sample_size]]
+    return true_sample
+
+
