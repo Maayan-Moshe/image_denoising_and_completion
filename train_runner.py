@@ -8,41 +8,6 @@ from utils.validator import Validator
 
 MAX_LOSS = 1e10
 
-PARAMS = {'train_params':{
-                'initial_learning_rate': 1e-3,
-                'minimum_learning_rate': 1e-5,
-                'state_fname': None,
-                'state_folder': r'C:\Users\maaya\Documents\deep_learning\saved_models\image_multi_scale',
-                'summaries_dir': r'C:\Users\maaya\Documents\deep_learning\results\summaries_images',
-                'saved_state_fname': 'real_data_multiscale',
-                'num_iterations': 200,
-                'summary_name': 'nn_real_data_multiscale',
-                'validation_rate_step': 5},
-          'graph_params':{
-                'module_path': 'gray_image_reconstruction.multiscale_graph_builder',
-                'image_shape': (28, 28),
-                'cost': 'l2_cost',
-                'cost_params': {},
-                'loss_producer': 'LossTrainingProducer',
-                'max_z_mm': 256, 'min_z_mm': 0,
-                'reduction': {
-                        'reducer': 'HeightMapReducerFiller',
-                        'regularization': {'kernel': 5e-1, 'bias': 5e-1}},
-                'expansion': {
-                        'expander': 'DataExpanderAveragerAdditioner',
-                        'regularization': {'kernel': 5e-1, 'bias': 5e-1}}},
-          'train_data_params':{
-                'file_path': r"C:\Users\maaya\Documents\deep_learning\minst_data\train-images.idx3-ubyte",
-                'batch_size': 60,
-                'zero_percentage': 0.3,
-                'feeder': 'MINSTSingleFileRandomZeros'},
-          'validation_data_params':{
-                'file_path': r"C:\Users\maaya\Documents\deep_learning\minst_data\train-images.idx3-ubyte",
-                'sample_size': 80,
-                'zero_percentage': 0.3,
-                'feeder': 'MINSTSingleFileRandomZerosValidate'}
-          }
-
 class SessionTrainer:
     
     def __init__(self, sess, components, params):
@@ -106,8 +71,9 @@ def prepare_components(params):
     return components
 
 if __name__ == '__main__':
-    
-    params = PARAMS
+    import json
+    with open(r'training_configuration.json') as config_file:
+        params = json.load(config_file)
 
     components = prepare_components(params)
     
