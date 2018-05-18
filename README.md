@@ -19,3 +19,31 @@ However the code should be compatible to any operating system and python version
 * TensorFlow 1.8.0.
 * numpy 1.4.
 * Project folder should be added to Python Path.
+
+## Configuration
+
+### Training configuration
+The configuration file is named "training_configuration.json". Selected fields which are included by the configuration file:
+* train_params
+	* initial_learning_rate - Each time the validation error increases the training rate 
+	reduce by factor of two until it reaches the minimum training rate.
+	* minimum_learning_rate
+	* state_fname - The network can be initilized from existing state, if state fname in None then it uses default initilization.
+	* state_folder - The folder in which the network parameters is saved to.
+	* summaries_dir - Here the summeries results like histograms and graph are stored (for TensorBoard).
+	* saved_state_fname - not including the date and selected network parameters.
+	* num_iterations
+	* summary_name
+	* validation_rate_step - The validation error is checked once in rate steps.
+* graph_params
+	* module_path - Which grapg it will prepare the module must contain a function called prepare_graph.
+	* cost - Which cost function to use.
+	* loss_producer - Responsible for summing the residuals.		
+* train_data_params
+	* file_path - The file containing the data
+	* batch_size
+	* feeder - We can feed the data in different ways.
+* validation_data_params": {
+	* file_path
+	* sample_size
+	* feeder
