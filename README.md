@@ -43,7 +43,7 @@ The configuration file is named "training_configuration.json". Selected fields w
 	* file_path - The file containing the data
 	* batch_size
 	* feeder - We can feed the data in different ways.
-* validation_data_params": {
+* validation_data_params
 	* file_path
 	* sample_size
 	* feeder
