@@ -56,7 +56,7 @@ class SessionTrainer:
         time_str = strftime("%d_%b_%Y_%H_%M", gmtime())
         out_state_fname = self.params['saved_state_fname'] + '_{}.ckpt'.format(time_str)
         session_path = os.path.join(self.params['state_folder'], out_state_fname)
-        self.saver.save(self.sess, os.path.join(self.params['state_folder'], session_path))
+        self.saver.save(self.sess, session_path)
 
 def prepare_components(params):
     from importlib import import_module

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0463fdc3-3138-435a-a89d-9446c41d7f33" name="Default" comment="" />
+    <list default="true" id="0463fdc3-3138-435a-a89d-9446c41d7f33" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/results_configuration.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/training_configuration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variable_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/variable_reader.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +19,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train_runner.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="train_runner.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="64" column="40" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="40" />
+            <state relative-caret-position="31">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="variable_reader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/variable_reader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="68" lean-forward="true" selection-start-line="59" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results_plotter.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/results_plotter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="multiscale_graph_builder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/multiscale_graph_builder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="training_configuration.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/training_configuration.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results_configuration.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results_configuration.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="62" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -23,8 +79,8 @@
       <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+            <state relative-caret-position="405">
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -41,29 +97,8 @@
       <file leaf-file-name="saver.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29954">
-              <caret line="1801" selection-start-line="1801" selection-end-line="1801" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="derivative_only_graph_builder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image_4dimentions_reconstruction/derivative_only_graph_builder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="30" />
-              <folding>
-                <element signature="e#1#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gray_image_reducer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+            <state relative-caret-position="8332">
+              <caret line="1719" selection-start-line="1719" selection-end-line="1719" />
             </state>
           </provider>
         </entry>
@@ -71,38 +106,8 @@
       <file leaf-file-name="DataFeeders.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3349">
+            <state relative-caret-position="406">
               <caret line="200" column="87" selection-start-line="200" selection-start-column="87" selection-end-line="200" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loss_producer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/loss_producer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reading_minst_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_preparation/reading_minst_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="48" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="48" />
-              <folding>
-                <element signature="e#289#302#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cost_functions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/cost_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -128,6 +133,7 @@
       <find>/media/sf_DeepLearningAlgIsrael/Maayan_Moshe</find>
       <find>get_weights</find>
       <find>weight_heights</find>
+      <find>z_predicted</find>
     </findStrings>
     <replaceStrings>
       <replace>image</replace>
@@ -157,7 +163,6 @@
         <option value="$PROJECT_DIR$/gray_image_reconstruction/data_expander_averager.py" />
         <option value="$PROJECT_DIR$/gray_image_reconstruction/reduce_expand_layer.py" />
         <option value="$PROJECT_DIR$/image_4dimentions_reconstruction/height_weighter.py" />
-        <option value="$PROJECT_DIR$/variable_reader.py" />
         <option value="$PROJECT_DIR$/image_4dimentions_reconstruction/weight_averager.py" />
         <option value="$PROJECT_DIR$/image_4dimentions_reconstruction/nn_graph_builder.py" />
         <option value="$PROJECT_DIR$/image_4dimentions_reconstruction/derivative_only_graph_builder.py" />
@@ -166,7 +171,11 @@
         <option value="$PROJECT_DIR$/data_preparation/reading_minst_data.py" />
         <option value="$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py" />
         <option value="$PROJECT_DIR$/data_preparation/DataFeeders.py" />
+        <option value="$PROJECT_DIR$/training_configuration.json" />
         <option value="$PROJECT_DIR$/train_runner.py" />
+        <option value="$PROJECT_DIR$/results_configuration.json" />
+        <option value="$PROJECT_DIR$/variable_reader.py" />
+        <option value="$PROJECT_DIR$/results_plotter.py" />
       </list>
     </option>
   </component>
@@ -181,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,23 +211,22 @@
             <path>
               <item name="image_denoising_and_completion" type="b2602c69:ProjectViewProjectNode" />
               <item name="image_denoising_and_completion" type="462c0819:PsiDirectoryNode" />
-              <item name="image_4dimentions_reconstruction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="image_denoising_and_completion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="image_denoising_and_completion" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\gitrep\image_denoising_and_completion" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -231,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train_runner">
+  <component name="RunManager" selected="Python.results_plotter">
     <configuration name="reading_minst_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="image_denoising_and_completion" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,6 +254,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preparation/reading_minst_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="results_plotter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="image_denoising_and_completion" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/results_plotter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -268,12 +295,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="variable_reader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="image_denoising_and_completion" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/variable_reader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.train_runner" />
       <item itemvalue="Python.reading_minst_data" />
+      <item itemvalue="Python.variable_reader" />
+      <item itemvalue="Python.results_plotter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.results_plotter" />
+        <item itemvalue="Python.variable_reader" />
         <item itemvalue="Python.train_runner" />
         <item itemvalue="Python.reading_minst_data" />
       </list>
@@ -294,31 +343,87 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968536" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32968536" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32968536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32968536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32968536" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32968536" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://C:/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29954">
+          <caret line="1801" selection-start-line="1801" selection-end-line="1801" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_4dimentions_reconstruction/derivative_only_graph_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#1#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3349">
+          <caret line="200" column="87" selection-start-line="200" selection-start-column="87" selection-end-line="200" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/loss_producer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_preparation/reading_minst_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="48" />
+          <folding>
+            <element signature="e#289#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/cost_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train_runner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -451,9 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/multiscale_graph_builder.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/reduce_expand_layer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -465,13 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="140" selection-start-column="95" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/variable_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -519,9 +614,6 @@
           <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_4dimentions_reconstruction/trivial_3x3_graph_builder.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/imag4d/image4d_deserializer.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -578,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29954">
-          <caret line="1801" selection-start-line="1801" selection-end-line="1801" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/validator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -592,24 +677,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
+    <entry file="file://$PROJECT_DIR$/utils/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3349">
-          <caret line="200" column="87" selection-start-line="200" selection-start-column="87" selection-end-line="200" selection-end-column="87" />
+        <state relative-caret-position="405">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/trainer.py">
+    <entry file="file://C:/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+        <state relative-caret-position="8332">
+          <caret line="1719" selection-start-line="1719" selection-end-line="1719" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="40" />
+        <state relative-caret-position="31">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="200" column="87" selection-start-line="200" selection-start-column="87" selection-end-line="200" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/multiscale_graph_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/variable_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="68" lean-forward="true" selection-start-line="59" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results_plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>

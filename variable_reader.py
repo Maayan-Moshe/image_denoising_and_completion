@@ -32,52 +32,22 @@ class VariablePrinter:
         print("bias : %s" % self.bias.eval())
         print("total weight : %s" % self.tot_weight.eval())
         
-class PredictedHeightMapPrinter:
-    
-    def __init__(self, state_params, graph_params):
-        from image_4dimentions_reconstruction.trivial_3x3_graph_builder import prepare_graph
-
-        self.shape = graph_params['image_shape']
-        self.cost_type = graph_params['cost']
-        self.graph_p = prepare_graph(graph_params)
-        self.saver = tf.train.Saver()
-        self.sparams = state_params
-        
-    def add_expected_heights_and_save(self):
-        
-        self.data = np.load(self.sparams['data_path'], encoding = 'latin1').tolist()
-        with tf.Session() as sess:
-            self.__perform(sess)
-            
-    def __perform(self, sess):
-
-        state_fname = os.path.join(self.sparams['state_folder'], self.sparams['state_fname'])
-        self.saver.restore(sess, state_fname)
-        for scan_dat in self.data.itervalues():
-            self.__add_predicted_to_map(scan_dat)
-        np.save(self.sparams['data_path'], self.data)
-    
-    def __add_predicted_to_map(self, scan_dat):
-
-        orig_height = scan_dat['z'].reshape((1, self.shape[0], self.shape[1]))
-        perd_z_tf = self.graph_p['z_predicted'].eval(feed_dict={self.graph_p['input']: orig_height})
-        out_field_name = 'z_' + self.cost_type
-        scan_dat[out_field_name] = np.array(perd_z_tf).reshape(self.shape)
-        
 class PredictedTensorPrinter:
     
-    def __init__(self, state_params, graph_params):
+    def __init__(self, params):
         from gray_image_reconstruction.multiscale_graph_builder import prepare_graph
-        from data_preparation.DataFeeders import OneFileValidatorFeeder
+        import data_preparation.DataFeeders as data_feeders
         
-        self.graph_p = prepare_graph(graph_params)
+        self.graph_p = prepare_graph(params['graph_params'])
         self.saver = tf.train.Saver()
-        self.feeder = OneFileValidatorFeeder(state_params['data_path'], state_params['cropping'])
+        state_params = params["state_params"]
+        self.state_fname = os.path.join(state_params["state_folder"], state_params["state_fname"])
+        self.feeder = getattr(data_feeders, params['data_params']['feeder'])(**params['data_params'])
 
-    def add_expected_heights_and_save(self, state_fname, out_path):
+    def add_expected_heights_and_save(self, out_path):
         
         with tf.Session() as sess:
-            self.__perform(sess, out_path, state_fname)
+            self.__perform(sess, out_path, self.state_fname)
             
     def __perform(self, sess, out_path, state_fname):
         
@@ -87,20 +57,22 @@ class PredictedTensorPrinter:
         feed_dict['predicted z'] = perd_z_tf
         np.save(out_path, feed_dict)
 
+def plot_result(results, image_num):
+    import matplotlib.pyplot as plt
+
+    input_img = results['input'][image_num]
+    predicted_img = results['predicted z'][image_num]
+    true_img = results['truth'][image_num]
+    fig, ((ax_in, ax_prd, ax_tr)) = plt.subplots(3, 1)
+    ax_in.imshow(input_img, 'gray')
+    ax_in.set(title='semilogy')
+
 if __name__ == '__main__':
-    
-    graph_params = {'image_shape': (178, 233), 'cost': 'l2_cost',
-                    'reduction': {
-                        'reducer': 'HeightMapReducerFiller',
-                        'regularization': {'kernel': 5e-1, 'bias': 5e-1}},
-                    'expansion': {
-                        'expander': 'DataExpanderAveragerAdditioner',
-                        'regularization': {'kernel': 5e-1, 'bias': 5e-1}},
-                    'loss_producer': 'LossTrainingProducerFiniteRange',
-                    'range_size_pix': 11,
-                    'max_z_mm': 25, 'min_z_mm': 0}
-    state_path = os.path.join(STATE_PARAMS['state_folder'], STATE_PARAMS['state_fname'])
-    out_path = r'path_to_state_files\results\real_dat_12_Mar_2018_12_23.npy'
-    PredictedTensorPrinter(STATE_PARAMS, graph_params).add_expected_heights_and_save(state_path, out_path)
+    import json
+
+    with open(r'results_configuration.json') as config_file:
+        params = json.load(config_file)
+    out_path = r'results\real_dat_19_May_2018_12_24.npy'
+    PredictedTensorPrinter(params).add_expected_heights_and_save(out_path)
 
 #    VariablePrinter().print_vars()

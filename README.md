@@ -19,6 +19,7 @@ However the code should be compatible to any operating system and python version
 * Python 3.6.
 * TensorFlow 1.8.0.
 * numpy 1.4.
+* To visualize results you need matplotlib 2.2.2.
 * Project folder should be added to Python Path.
 
 ## Configuration
@@ -48,3 +49,21 @@ The configuration file is named "training_configuration.json". Selected fields w
 	* file_path
 	* sample_size
 	* feeder
+	
+### Results configuration
+The configuration file is named "results_configuration.json". Selected fields which are included by the configuration file:
+* state_params
+	* state_fname - The file which contains the network data.
+	* state_folder
+* graph_params
+	* module_path - different graphs for different usages are contained in different modules.
+	* image_shape
+	* max_z_mm - Maximum value of predicted pixel mostly 256.
+	* min_z_mm - Minimum value of predicted pixel mostly 0.
+* data_params
+	* file_path - The file containing the data
+	* sample_size
+	* feeder - How we read the data from the file.
+
+## Results
+![alt text](C:\gitrep\image_denoising_and_completion\results_0.png "Image of number 4 reconstructed")

@@ -1,0 +1,35 @@
+{
+	"state_params": {
+		"state_fname": "real_data_multiscale_19_May_2018_12_24.ckpt",
+		"state_folder": "saved_models\\image_multi_scale"
+	},
+	"graph_params": {
+		"module_path": "gray_image_reconstruction.multiscale_graph_builder",
+		"image_shape": [28, 28],
+		"cost": "l2_cost",
+		"cost_params": {},
+		"loss_producer": "LossTrainingProducer",
+		"max_z_mm": 256,
+		"min_z_mm": 0,
+		"reduction": {
+			"reducer": "HeightMapReducerFiller",
+			"regularization": {
+				"kernel": 0.05,
+				"bias": 0.05
+			}
+		},
+		"expansion": {
+			"expander": "DataExpanderAveragerAdditioner",
+			"regularization": {
+				"kernel": 0.05,
+				"bias": 0.05
+			}
+		}
+	},
+	"data_params": {
+		"file_path": "minst_data\\train-images.idx3-ubyte",
+		"sample_size": 10,
+		"zero_percentage": 0.3,
+		"feeder": "MINSTSingleFileRandomZerosValidate"
+	}
+}
