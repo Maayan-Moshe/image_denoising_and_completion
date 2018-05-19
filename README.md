@@ -66,4 +66,11 @@ The configuration file is named "results_configuration.json". Selected fields wh
 	* feeder - How we read the data from the file.
 
 ## Results
-![alt text](C:\gitrep\image_denoising_and_completion\results_0.png "Image of number 4 reconstructed")
+By running the file variable_reader.py with the state file "real_data_multiscale_19_May_2018_12_24.ckpt" we produced sample results for this trained network.
+Now we ran the file results_plotter.py to visualize the results.
+
+Two examples are presented below, corrupted images of numbers 4 and 9 were entered to the network and we manage to retrieve images very similar to the original images.
+
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion.git/results_0.png "Image of number 4 reconstructed")
+
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion.git/results_1.png "Image of number 9 reconstructed")

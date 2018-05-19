@@ -57,16 +57,6 @@ class PredictedTensorPrinter:
         feed_dict['predicted z'] = perd_z_tf
         np.save(out_path, feed_dict)
 
-def plot_result(results, image_num):
-    import matplotlib.pyplot as plt
-
-    input_img = results['input'][image_num]
-    predicted_img = results['predicted z'][image_num]
-    true_img = results['truth'][image_num]
-    fig, ((ax_in, ax_prd, ax_tr)) = plt.subplots(3, 1)
-    ax_in.imshow(input_img, 'gray')
-    ax_in.set(title='semilogy')
-
 if __name__ == '__main__':
     import json
 
