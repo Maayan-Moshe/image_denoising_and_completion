@@ -71,6 +71,6 @@ Now we ran the file results_plotter.py to visualize the results.
 
 Two examples are presented below, corrupted images of numbers 4 and 9 were entered to the network and we manage to retrieve images very similar to the original images.
 
-![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/results_0.png)
+![alt text](image_denoising_and_completion/results_0.png)
 
-![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/results_1.png)
+![alt text](image_denoising_and_completion/results_0.png)
