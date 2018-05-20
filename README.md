@@ -74,3 +74,8 @@ Two examples are presented below, corrupted images of numbers 4 and 9 were enter
 ![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/results_0.png "")
 
 ![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/results_1.png "")
+
+## Graph structure
+The current graph that is defiend by the training and results configuration has the general structure displayed below.
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/graph_general_structure.png "")
+
