@@ -77,6 +77,31 @@ Two examples are presented below, corrupted images of numbers 4 and 9 were enter
 
 ## Graph structure
 The current graph that is defiend by the training and results configuration has the general structure displayed below.
+The graph image was produced by TensorBoard using the command C:\WINDOWS\system32>tensorboard --logdir=C:\gitrep\image_denoising_and_completion\results\summaries_images\train, 
+where the summaries are located.
 
 ![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/graph_general_structure.PNG "")
+
+The general structure of the network is similar to [U net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28), 
+in the sense that we start with a full scale image (in our case 28x28xnum_channels) and then reduce it by convolutional layers and then expand the image again to its original size.
+Each reduction reduce the image by a factor of two in the first and second dimensions and each expansion increases back the image by a factor of two in the first two dimensions.
+The lower limit for reduction is 2 in the small dimension so for our case of 28 pixels original size we have 4 reduction\expansion layers.
+Each reduction layer output is used for the next reduction layer input but also as an input for the same size expansion layer and also the twice larger expansion layer.
+
+The general structure of a reduction layer is displayed below. 
+As an input the layer takes as an input image from the layer below it and same size tensor in the first two dimensions but several channels in the channels dimensions.
+Each 2x2 window in the input image we average by weights calculated by layer conv5 and conv6 in the example below.
+The weights then are normalized so that the sum of the weights would be one if the sum of the weights is greater than one and is not normalized if the sum of weights in smaller than one.
+After reducing the image by averaging each 2x2 window we add some additional image that is calculated by conv7, conv8 and conv9 in the example below.
+The output of the layer is used as an input to the next reduction image but also to the expansion layers of the same size and twice its size (in each of the first two dimensions).
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/reduction_layer.PNG "")
+
+The general structure of an expansion layer is displayed below. 
+As an input the layer takes as an input image from the layer below it and same size tensor in the first two dimensions but several channels in the channels dimensions.
+Also it takes the output of the reduction layers of the same size and half the size.
+To make the smaller images (from the previous layer and the smaller reduction layer) of the same size of the new layer we use a constant interpolation operator called expanding_data.
+The weights of the interpolation operator are learned but they are constant for all the layers, to save parameters.
+Then we average the images from the previous layers but with weights which are calculated seperatley for each pixel.
+The final layer is addiotion layer similar to the one used in [res-Net](https://arxiv.org/abs/1512.03385).
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/expansion_layer.PNG "")
 
