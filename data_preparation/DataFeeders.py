@@ -166,7 +166,7 @@ class SeparateFilesFeeder:
 
 class MINSTSingleFileRandomZeros:
 
-    def __init__(self, file_path, batch_size, zero_percentage, **kwargs):
+    def __init__(self, file_path, batch_size, zero_percentage, max_percentage, **kwargs):
         from .reading_minst_data import read_idx
 
         self.true_data = read_idx(file_path)
@@ -174,11 +174,11 @@ class MINSTSingleFileRandomZeros:
         self.batch_size = batch_size
         self.index = 0
         self.zero_percentage = zero_percentage
-        assert 1 >= self.zero_percentage >= 0, 'percentage should be between 0 and 1'
+        self.max_percentage = max_percentage
 
     def next_batch(self):
         true_batch = self.__get_true_data()
-        corrupted_batch = get_corrupted_data(true_batch, self.zero_percentage)
+        corrupted_batch = get_corrupted_data(true_batch, self.zero_percentage, self.max_percentage)
         return {'input': corrupted_batch, 'truth': true_batch}
 
     def __get_true_data(self):
@@ -189,22 +189,29 @@ class MINSTSingleFileRandomZeros:
 
 class MINSTSingleFileRandomZerosValidate:
 
-    def __init__(self, file_path, sample_size, zero_percentage, **kwargs):
+    def __init__(self, file_path, sample_size, zero_percentage, max_percentage, **kwargs):
         from .reading_minst_data import read_idx
 
         self.true_data = get_true_data(read_idx(file_path), sample_size)
-        self.corrupted_data = get_corrupted_data(self.true_data, zero_percentage)
-        assert 1 >= zero_percentage >= 0, 'percentage should be between 0 and 1'
+        self.corrupted_data = get_corrupted_data(self.true_data, zero_percentage, max_percentage)
 
     def get_all_data(self):
 
         return {'input': np.copy(self.corrupted_data), 'truth': np.copy(self.true_data)}
 
-def get_corrupted_data(true_batch, zero_percentage):
+def get_corrupted_data(true_batch, per_0, per_255):
+    assert 1 >= per_0 >= 0, 'percentage should be between 0 and 1'
+    assert 1 >= per_255 >= 0, 'percentage should be between 0 and 1'
+
+    corrupted_batch = get_corrupted_data_value(true_batch, per_255, value = 255)
+    corrupted_batch = get_corrupted_data_value(corrupted_batch, per_0, value = 0)
+    return corrupted_batch
+
+def get_corrupted_data_value(true_batch, percentage, value):
     corrupted_batch = np.copy(true_batch)
     sze = corrupted_batch.size
-    zero_indexes = np.random.choice(range(sze), int(zero_percentage * sze))
-    corrupted_batch.ravel()[zero_indexes] = 0
+    zero_indexes = np.random.choice(range(sze), int(percentage * sze))
+    corrupted_batch.ravel()[zero_indexes] = value
     return corrupted_batch
 
 def get_true_data(all_data, sample_size):

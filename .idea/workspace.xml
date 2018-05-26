@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0463fdc3-3138-435a-a89d-9446c41d7f33" name="Default" comment="" />
+    <list default="true" id="0463fdc3-3138-435a-a89d-9446c41d7f33" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preparation/DataFeeders.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preparation/DataFeeders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expansion_layer.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_general_structure.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reduction_layer.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/summaries_images/train/nn_real_data_multiscale_12_May_2018_09_20/events.out.tfevents.1526116850.DESKTOP-2HO13ES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/summaries_images/train/nn_real_data_multiscale_18_May_2018_14_45/events.out.tfevents.1526654738.DESKTOP-2HO13ES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/summaries_images/train/nn_real_data_multiscale_19_May_2018_11_49/events.out.tfevents.1526730588.DESKTOP-2HO13ES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/summaries_images/train/nn_real_data_multiscale_19_May_2018_12_01/events.out.tfevents.1526731299.DESKTOP-2HO13ES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/summaries_images/train/nn_real_data_multiscale_19_May_2018_12_05/events.out.tfevents.1526731504.DESKTOP-2HO13ES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/summaries_images/train/nn_real_data_multiscale_19_May_2018_12_05/events.out.tfevents.1526731539.DESKTOP-2HO13ES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/summaries_images/train/nn_real_data_multiscale_19_May_2018_12_16/events.out.tfevents.1526732216.DESKTOP-2HO13ES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/summaries_images/train/nn_real_data_multiscale_19_May_2018_12_20/events.out.tfevents.1526732456.DESKTOP-2HO13ES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/results_configuration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/results_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/saved_models/image_multi_scale/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_12_May_2018_09_31.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_12_May_2018_09_31.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_12_May_2018_09_31.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_18_May_2018_14_57.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_18_May_2018_14_57.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_18_May_2018_14_57.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_11_59.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_11_59.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_11_59.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_04.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_04.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_04.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_09.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_09.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_09.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_24.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_24.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_models/image_multi_scale/real_data_multiscale_19_May_2018_12_24.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/training_configuration.json" beforeDir="false" afterPath="$PROJECT_DIR$/training_configuration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variable_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/variable_reader.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +53,10 @@
       <file leaf-file-name="train_runner.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="51" />
+            <state>
+              <folding>
+                <element signature="e#1#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -23,20 +64,17 @@
       <file leaf-file-name="variable_reader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/variable_reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-              <folding>
-                <element signature="e#2723#2968#0" />
-              </folding>
+            <state relative-caret-position="278">
+              <caret line="64" column="67" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results_plotter.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="results_plotter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results_plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="27" />
+            <state relative-caret-position="306">
+              <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -44,7 +82,7 @@
       <file leaf-file-name="multiscale_graph_builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/multiscale_graph_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
+            <state relative-caret-position="476">
               <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -53,11 +91,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="training_configuration.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="training_configuration.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/training_configuration.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+            <state relative-caret-position="68">
+              <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cost_functions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/cost_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -66,34 +113,7 @@
         <entry file="file://$PROJECT_DIR$/results_configuration.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="62" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/trainer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/validator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="saver.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8332">
-              <caret line="1719" selection-start-line="1719" selection-end-line="1719" />
+              <caret line="2" selection-start-line="2" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -101,8 +121,17 @@
       <file leaf-file-name="DataFeeders.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="200" column="87" selection-start-line="200" selection-start-column="87" selection-end-line="200" selection-end-column="87" />
+            <state relative-caret-position="323">
+              <caret line="218" column="27" selection-start-line="218" selection-start-column="27" selection-end-line="218" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loss_producer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/loss_producer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -165,16 +194,16 @@
         <option value="$PROJECT_DIR$/utils/loss_producer.py" />
         <option value="$PROJECT_DIR$/data_preparation/reading_minst_data.py" />
         <option value="$PROJECT_DIR$/gray_image_reconstruction/gray_image_reducer.py" />
-        <option value="$PROJECT_DIR$/data_preparation/DataFeeders.py" />
-        <option value="$PROJECT_DIR$/training_configuration.json" />
         <option value="$PROJECT_DIR$/train_runner.py" />
+        <option value="$PROJECT_DIR$/data_preparation/DataFeeders.py" />
         <option value="$PROJECT_DIR$/results_configuration.json" />
-        <option value="$PROJECT_DIR$/results_plotter.py" />
         <option value="$PROJECT_DIR$/variable_reader.py" />
+        <option value="$PROJECT_DIR$/results_plotter.py" />
+        <option value="$PROJECT_DIR$/training_configuration.json" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -235,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.results_plotter">
+  <component name="RunManager" selected="Python.variable_reader">
     <configuration name="reading_minst_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="image_denoising_and_completion" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -343,10 +372,9 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32968536" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32968536" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32968536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32968536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -358,6 +386,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968536" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -375,9 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="24" column="30" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="e#1#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -406,9 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="48" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="e#289#302#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -444,9 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="24" column="30" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="e#1#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -482,9 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="48" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="e#289#302#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,23 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="48" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="e#289#302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/loss_producer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/cost_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -652,9 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="24" column="30" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="e#1#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,42 +671,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="867">
           <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Python36/Lib/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8332">
+        <state relative-caret-position="28560">
           <caret line="1719" selection-start-line="1719" selection-end-line="1719" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training_configuration.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="200" column="87" selection-start-line="200" selection-start-column="87" selection-end-line="200" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gray_image_reconstruction/multiscale_graph_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
+        <state relative-caret-position="476">
           <caret line="31" column="88" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -717,27 +693,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results_configuration.json">
+    <entry file="file://$PROJECT_DIR$/data_preparation/DataFeeders.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="62" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="62" />
+        <state relative-caret-position="323">
+          <caret line="218" column="27" selection-start-line="218" selection-start-column="27" selection-end-line="218" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/variable_reader.py">
+    <entry file="file://$PROJECT_DIR$/utils/loss_producer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="405">
+          <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/cost_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#2723#2968#0" />
+            <element signature="e#1#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/results_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="306">
+          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/variable_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="64" column="67" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
         </state>
       </provider>
     </entry>

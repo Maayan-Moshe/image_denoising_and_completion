@@ -66,21 +66,37 @@ The configuration file is named "results_configuration.json". Selected fields wh
 	* feeder - How we read the data from the file.
 
 ## Results
-By running the file variable_reader.py with the state file "real_data_multiscale_19_May_2018_12_24.ckpt" we produced sample results for this trained network.
+By running the file variable_reader.py with the state file "real_data_multiscale_26_May_2018_06_48.ckpt" we produced sample results for this trained network.
 Now we ran the file results_plotter.py to visualize the results.
 
 Two examples are presented below, corrupted images of numbers 4 and 9 were entered to the network and we manage to retrieve images very similar to the original images.
+Where we corrupted the images only with pepper noise (black pixels) of randomly selected ~30% of the pixels. The cost is L2 distance between the predicted image to the true one.
 
-![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/results_0.png "")
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/results_0.png "")
 
-![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/results_1.png "")
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/results_1.png "")
+
+If we corrupt the images with salt pepper noise (with ~51% corrrupted images) and use L2 distance 
+we get the following results. One can see the smear of the images compared to the original images.
+
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/results_salt_pepper_l2_0.png "")
+
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/results_salt_pepper_l2_1.png "")
+
+If we corrupt the images with salt pepper noise (with ~51% corrrupted images) and use L1 distance 
+we get the following results. One can see less smear of the images compared to the original images but not as good shape reconstruction.
+
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/results_salt_pepper_l1_0.png "")
+
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/results_salt_pepper_l1_1.png "")
+
 
 ## Graph structure
 The current graph that is defiend by the training and results configuration has the general structure displayed below.
 The graph image was produced by TensorBoard using the command C:\WINDOWS\system32>tensorboard --logdir=C:\gitrep\image_denoising_and_completion\results\summaries_images\train, 
 where the summaries are located.
 
-![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/graph_general_structure.PNG "")
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/graph_general_structure.PNG "")
 
 The general structure of the network is similar to [U net](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28), 
 in the sense that we start with a full scale image (in our case 28x28xnum_channels) and then reduce it by convolutional layers and then expand the image again to its original size.
@@ -94,7 +110,7 @@ Each 2x2 window in the input image we average by weights calculated by layer con
 The weights then are normalized so that the sum of the weights would be one if the sum of the weights is greater than one and is not normalized if the sum of weights in smaller than one.
 After reducing the image by averaging each 2x2 window we add some additional image that is calculated by conv7, conv8 and conv9 in the example below.
 The output of the layer is used as an input to the next reduction image but also to the expansion layers of the same size and twice its size (in each of the first two dimensions).
-![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/reduction_layer.PNG "")
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/reduction_layer.PNG "")
 
 The general structure of an expansion layer is displayed below. 
 As an input the layer takes as an input image from the layer below it and same size tensor in the first two dimensions but several channels in the channels dimensions.
@@ -103,5 +119,5 @@ To make the smaller images (from the previous layer and the smaller reduction la
 The weights of the interpolation operator are learned but they are constant for all the layers, to save parameters.
 Then we average the images from the previous layers but with weights which are calculated seperatley for each pixel.
 The final layer is addiotion layer similar to the one used in [res-Net](https://arxiv.org/abs/1512.03385).
-![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/expansion_layer.PNG "")
+![alt text](https://github.com/Maayan-Moshe/image_denoising_and_completion/blob/master/images/expansion_layer.PNG "")
 

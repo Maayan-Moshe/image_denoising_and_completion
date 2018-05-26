@@ -1,6 +1,6 @@
 {
 	"state_params": {
-		"state_fname": "real_data_multiscale_19_May_2018_12_24.ckpt",
+		"state_fname": "real_data_multiscale_26_May_2018_10_50.ckpt",
 		"state_folder": "saved_models\\image_multi_scale"
 	},
 	"graph_params": {
@@ -30,6 +30,7 @@
 		"file_path": "minst_data\\train-images.idx3-ubyte",
 		"sample_size": 10,
 		"zero_percentage": 0.3,
+		"max_percentage": 0.3,
 		"feeder": "MINSTSingleFileRandomZerosValidate"
 	}
 }

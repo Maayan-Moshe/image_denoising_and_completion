@@ -9,13 +9,13 @@ def plot_result(results, image_num):
 
 def plot_image(ax, image, title):
 
-    ax.imshow(image, 'gray', interpolation = 'none')
+    ax.imshow(image, 'gray', interpolation = 'none', vmin = 0, vmax = 255)
     ax.set(title=title)
     ax.axis('off')
 
 if __name__ == '__main__':
     import numpy as np
 
-    results = np.load('results/real_dat_19_May_2018_12_24.npy').tolist()
+    results = np.load('results/real_data_multiscale_26_May_2018_10_50.npy').tolist()
     plot_result(results, 0)
 

@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     with open(r'results_configuration.json') as config_file:
         params = json.load(config_file)
-    out_path = r'results\real_dat_19_May_2018_12_24.npy'
+    out_path = r'results\real_data_multiscale_26_May_2018_10_50.npy'
     PredictedTensorPrinter(params).add_expected_heights_and_save(out_path)
 
 #    VariablePrinter().print_vars()
